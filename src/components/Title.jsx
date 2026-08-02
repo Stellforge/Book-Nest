@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Title = ({title, subtitle, align, font}) => {
+const Title = ({title, subTitle, align, font}) => {
   return (
     <div
       className={`flex flex-col justify-center items-center text-center ${
@@ -11,7 +11,7 @@ const Title = ({title, subtitle, align, font}) => {
         {title}
       </h1>
       <p className="text-sm md:text-base text-gray-500/90 mt-2 max-w-174">
-        {subtitle}
+        {subTitle}
       </p>
     </div>
   )

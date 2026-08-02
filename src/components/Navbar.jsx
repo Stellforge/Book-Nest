@@ -95,7 +95,7 @@ const Navbar = () => {
         <img
           src={assets.searchIcon}
           alt="Search"
-          className={`${isScrolled ? invert : ""} h-7 transition-all duration-500`}
+          className={`${isScrolled ? "invert" : ""} h-7 transition-all duration-500`}
         />
 
         {user ? (
@@ -158,7 +158,7 @@ const Navbar = () => {
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           src={assets.menuIcon}
           alt=""
-          className={`${isScrolled && invert}  h-4`}
+          className={`${isScrolled ? "invert" : ""} h-4`}
         />
       </div>
 
@@ -171,8 +171,6 @@ const Navbar = () => {
           onClick={() => setIsMenuOpen(false)}
         >
           <img src={assets.closeIcon} alt="closeMenu" className="h-6.5" />
-          <line x1="18" y1="6" x2="6" y2="18" />
-          <line x1="6" y1="6" x2="18" y2="18" />
         </button>
 
         {navLinks.map((link, i) => (

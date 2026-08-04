@@ -4,8 +4,8 @@ import { assets } from "../assets/assets";
 
 const ExclusiveOffers = () => {
   return (
-    <div>
-      <div>
+    <div className="flex flex-col items-center px-6 md:px-16 lg:px-24 xl:px-32 pt-20 pb-30">
+      <div className="flex flex-col md:flex-row items-center justify-between w-full">
         <Title
           align="left"
           title="Exclusive Offers"
